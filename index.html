@@ -63,7 +63,7 @@
   position: absolute;
   top: 20px;
   left: 20px;
-  cursor: grab;
+  cursor: url("https://www.rw-designer.com/icon-image/17077-256x256x8.png"), auto;
   width: 180px;
   background-color: #fff0ff;
   border: 4px double #b47cff;
@@ -142,31 +142,6 @@
 </div>
 <img src="https://i.pinimg.com/736x/14/a3/db/14a3db76af90baf6796fa8c9cd610dc4.jpg" class="animal-left" alt="con sombrero">
 <img src="https://i.pinimg.com/1200x/f9/96/cc/f996ccad1d490f0e85b2325ea0bbdc14.jpg" class="animal-right" alt="con sombrero">
-   <script>
-  const toc = document.querySelector(".toc");
-
-  let isDragging = false;
-  let offsetX, offsetY;
-
-  toc.addEventListener("mousedown", function(e) {
-    isDragging = true;
-    offsetX = e.clientX - toc.offsetLeft;
-    offsetY = e.clientY - toc.offsetTop;
-  });
-
-  document.addEventListener("mousemove", function(e) {
-    if (isDragging) {
-      toc.style.left = e.clientX - offsetX + "px";
-      toc.style.top = e.clientY - offsetY + "px";
-    }
-  });
-
-  document.addEventListener("mouseup", function() {
-    isDragging = false;
-  });
-  </script>
-
-</body>
 </body>
 
 </html>
