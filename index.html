@@ -95,31 +95,6 @@
 }
   </style>
 
-</head>
-
-<script>
-const toc = document.querySelector(".toc");
-
-let isDragging = false;
-let offsetX, offsetY;
-
-toc.addEventListener("mousedown", function(e) {
-  isDragging = true;
-  offsetX = e.clientX - toc.offsetLeft;
-  offsetY = e.clientY - toc.offsetTop;
-});
-
-document.addEventListener("mousemove", function(e) {
-  if (isDragging) {
-    toc.style.left = e.clientX - offsetX + "px";
-    toc.style.top = e.clientY - offsetY + "px";
-  }
-});
-
-document.addEventListener("mouseup", function() {
-  isDragging = false;
-});
-</script>
 <body>
 <div class="toc">
   <h3>Content</h3>
